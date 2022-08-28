@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <span class="value"></span>
+  <button class="plus-button">plus</button>
+  <button class="minus-button">minus</button>
+</body>
+<script>
+  let value = 0;
+  const valueElement = document.querySelector('.value');
+  const plusButton = document.querySelector(".plus-button");
+  const minusButton = document.querySelector(".minus-button");
+
+  plusButton.addEventListener('click', () => {
+    value = value + 1;
+    valueElement.innerText = value;
+  });
+  minusButton.addEventListener('click', () => {
+    value = value - 1;
+    valueElement.innerText = value;
+  });
+</script>
+</html>
